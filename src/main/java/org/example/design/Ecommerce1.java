@@ -2,9 +2,7 @@ package org.example.design;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,11 +14,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
-public class Ecommerce extends BaseClass {
+public class Ecommerce1 extends BaseClass1 {
 
     @Test(dataProvider = "getData")
     public void fillForm(HashMap<String, String> input) throws MalformedURLException, InterruptedException {
-        FirstPage fo = new FirstPage(driver);
+        FirstPage1 fo = new FirstPage1(driver);
         fo.setTextbox(input.get("name"));
         fo.setGender(input.get("gender"));
         fo.setCountrySelection(input.get("country"));
@@ -28,7 +26,7 @@ public class Ecommerce extends BaseClass {
         ProductCatalogue productCatalogue = new ProductCatalogue(driver);
         productCatalogue.addItemToCartByIndex(0);
         productCatalogue.GoToCart();
-        CartPage cartPage = new CartPage(driver);
+        CartPage1 cartPage = new CartPage1(driver);
         double totalsum = cartPage.getProductSum();
         System.out.println(totalsum);
         double displayFormattedSum = cartPage.getTotalAmountDisplayed();
@@ -43,7 +41,7 @@ public class Ecommerce extends BaseClass {
         }
 //driver.context("WEBVIEW_com.androidsample.generalstore");
       //  driver.findElement(By.id("input")).sendKeys("Amazon");
-
+// gyuio
 
 
     }

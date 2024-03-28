@@ -3,12 +3,12 @@ package org.example.Utils;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
-import org.example.design.BaseClass;
+import org.example.design.BaseClass1;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
-public class AndroidActions extends BaseClass {
+public class AndroidActions extends BaseClass1 {
 
 
     public AndroidActions(AndroidDriver driver) {

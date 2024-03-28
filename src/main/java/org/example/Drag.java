@@ -3,8 +3,8 @@ package org.example;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
-import org.example.APIDemoApplication.BaseClass;
-import org.example.design.BaseClass;
+import org.example.APIDemoApplication.BaseClass1;
+import org.example.design.BaseClass1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 
-public class Drag extends BaseClass {
+public class Drag extends BaseClass1 {
     @Test
     public void DragNDrop() throws MalformedURLException, InterruptedException {
         Configuration();

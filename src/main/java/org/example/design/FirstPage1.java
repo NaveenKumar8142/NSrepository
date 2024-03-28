@@ -8,10 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-public class FirstPage extends AndroidActions {
+public class FirstPage1 extends AndroidActions {
     public AndroidDriver driver;
 
-    public FirstPage(AndroidDriver driver) {
+    public FirstPage1(AndroidDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
