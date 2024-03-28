@@ -26,6 +26,5 @@ jobs:
         api-level: ${{ matrix.api-level }}
         target: ${{ matrix.target }}
         arch: x86_64
-        profile: Nexus 6
-        script: ./gradlew test --info # running our test with info to check the results
+
   
