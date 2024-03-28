@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCase3 extends BaseClass1 {
+public class TestCase3 extends BaseClass {
     @Test
     public void checkingPrice() throws InterruptedException {
         driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry")).click();

@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class CartPage1 extends AndroidActions {
+public class CartPage extends AndroidActions {
     AndroidDriver driver;
-    public CartPage1(AndroidDriver driver) {
+    public CartPage(AndroidDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);

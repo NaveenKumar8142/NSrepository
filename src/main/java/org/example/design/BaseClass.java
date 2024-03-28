@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
-public class BaseClass1 {
+public class BaseClass {
     public static AndroidDriver driver;
     public static AppiumDriverLocalService service;
 

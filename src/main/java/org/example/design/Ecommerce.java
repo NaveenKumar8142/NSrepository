@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
-public class Ecommerce1 extends BaseClass1 {
+public class Ecommerce extends BaseClass {
 
     @Test(dataProvider = "getData")
     public void fillForm(HashMap<String, String> input) throws MalformedURLException, InterruptedException {
@@ -26,7 +26,7 @@ public class Ecommerce1 extends BaseClass1 {
         ProductCatalogue productCatalogue = new ProductCatalogue(driver);
         productCatalogue.addItemToCartByIndex(0);
         productCatalogue.GoToCart();
-        CartPage1 cartPage = new CartPage1(driver);
+        CartPage cartPage = new CartPage(driver);
         double totalsum = cartPage.getProductSum();
         System.out.println(totalsum);
         double displayFormattedSum = cartPage.getTotalAmountDisplayed();
